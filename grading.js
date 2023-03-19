@@ -10,24 +10,24 @@ function dertermineGradeOfStudent(marks){
         return 'Not valid marks'
      }
     else if(marks > 79 ){
-        return 'A'
+        return `${msg} (A) `
     }
     else if (marks >= 60 && marks  <=79 ){
 
-        return 'B'
+        return `${msg} (B) `
 
     }
     else if (marks <= 59 && marks >= 49){
-        return 'C'
+        return `${msg} (C) `
     }
     else if (marks >= 40 && marks <=49){
 
-      return 'D'
+        return `${msg} (D) `
 
     }
     else{
-        return 'E'
+        return `${msg} (E) `
     }
 }
 dertermineGradeOfStudent()
- //console.log(dertermineGradeOfStudent(0))
+console.log(dertermineGradeOfStudent(100))
